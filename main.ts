@@ -9,6 +9,7 @@ function AvgDistance () {
 radio.onReceivedNumber(function (receivedNumber) {
     if (receivedNumber == 2) {
         while (AvgDistance() >= 5) {
+            cuteBot.colorLight(cuteBot.RGBLights.RGB_L, 0x007fff)
             basic.showLeds(`
                 . . # . .
                 . # # . .
@@ -26,6 +27,7 @@ radio.onReceivedNumber(function (receivedNumber) {
                 cuteBot.motors(25, 25)
             }
         }
+        cuteBot.colorLight(cuteBot.RGBLights.RGB_L, 0xff0000)
         cuteBot.stopcar()
         basic.showLeds(`
             . # # # .
