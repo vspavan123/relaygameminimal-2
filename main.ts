@@ -26,6 +26,9 @@ radio.onReceivedNumber(function (receivedNumber) {
             if (cuteBot.tracking(cuteBot.TrackingState.L_R_line)) {
                 cuteBot.motors(25, 25)
             }
+            if (cuteBot.tracking(cuteBot.TrackingState.L_R_unline)) {
+                cuteBot.motors(-25, -25)
+            }
         }
         cuteBot.colorLight(cuteBot.RGBLights.RGB_L, 0xff0000)
         cuteBot.stopcar()
